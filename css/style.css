@@ -106,15 +106,12 @@ img{
     text-transform: uppercase;
     font-family: "Roboto";
     font-weight: 700;
+    font-size: 20px;
 }
 
 .button-filled{
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-}
-
-.button.button-filled{
-    margin-left:25px;
 }
 
 .scrolldown-btn{
@@ -200,5 +197,30 @@ img{
 
 .button-work{
     border-color: var(--primary-color);
+    color: #212121;
+    padding: 21px 32px;
+    font-weight: 400;
+}
 
+.works-section{
+    padding: 128px 0;
+}
+
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item{
+    margin: 0 auto;
+}
+
+.category-list{
+    margin: 112px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category{
+    margin: auto;
 }
