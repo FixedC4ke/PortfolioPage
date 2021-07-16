@@ -182,3 +182,14 @@ img{
     background-color: #ffffff;
     margin: 31px auto;
 }
+
+.service-selected{
+    background-color: #00897b;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.service-selected-btn{
+    color: white;
+    border-color: white;
+}

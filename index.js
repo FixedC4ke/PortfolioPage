@@ -1,15 +1,16 @@
-function onMouseOverServiceItem(obj){
-    obj.style.color="white";
-    obj.style.backgroundColor="#00897b";
-    var button = obj.getElementsByClassName("button button-services")[0];
-    button.style.color="white";
-    button.style.borderColor="white";
-}
+var serviceItems = document.getElementsByClassName("services-item");
 
-function onMouseLeaveServiceItem(obj){
-    obj.style.color="black";
-    obj.style.backgroundColor="white";
-    var button = obj.getElementsByClassName("button button-services")[0];
-    button.style.color="black";
-    button.style.borderColor="black";
+for (var i = 0; i<serviceItems.length; i++){
+serviceItems[i].addEventListener("mouseover", (event)=>{
+    if (event.target===event.currentTarget){
+        event.target.classList.add("service-selected");
+        event.target.children["readmore"].classList.add('service-selected-btn');
+    }
+});
+serviceItems[i].addEventListener("mouseleave", (event)=>{
+    if (event.target===event.currentTarget){
+        event.target.classList.remove("service-selected");
+        event.target.children["readmore"].classList.remove('service-selected-btn');
+    }
+});
 }
