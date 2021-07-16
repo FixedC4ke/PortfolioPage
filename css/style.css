@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #00897b;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -70,7 +74,7 @@ img{
 }
 
 .nav-item:hover{
-    background-color: #00897b;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -105,8 +109,8 @@ img{
 }
 
 .button-filled{
-    background-color: #00897b;
-    border-color: #00897b;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .button.button-filled{
@@ -184,7 +188,7 @@ img{
 }
 
 .service-selected{
-    background-color: #00897b;
+    background-color: var(--primary-color);
     box-shadow: 0 6px 6px rgba(0,0,0,0.5);
     color: white;
 }
@@ -192,4 +196,9 @@ img{
 .service-selected-btn{
     color: white;
     border-color: white;
+}
+
+.button-work{
+    border-color: var(--primary-color);
+
 }
