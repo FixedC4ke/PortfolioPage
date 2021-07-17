@@ -14,3 +14,21 @@ serviceItems[i].addEventListener("mouseleave", ({target, currentTarget})=>{
     }
 });
 }
+
+var scrollupBtn = document.getElementById("totop");
+
+window.onscroll = ()=>{
+    scrollFunc();
+}
+
+function scrollFunc(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        scrollupBtn.style.visibility="visible";
+        scrollupBtn.style.opacity="1";
+    }
+    else{
+        scrollupBtn.style.visibility="hidden";
+        scrollupBtn.style.opacity="0";
+    }
+}
+

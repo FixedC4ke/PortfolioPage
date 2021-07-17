@@ -224,3 +224,26 @@ img{
 .category{
     margin: auto;
 }
+
+.totop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 90px;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.totop a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.totop a img{
+    transform: rotate(180deg);
+}
